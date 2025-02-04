@@ -3,7 +3,8 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "@templates/*":["./src/app/templates/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@templates/*": ["./src/app/templates/*"],
       "@pages/*": ["./src/app/pages/*"]
     },
     "outDir": "./dist/out-tsc",
