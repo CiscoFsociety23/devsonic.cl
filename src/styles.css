@@ -8,7 +8,7 @@
 
 body::before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -16,6 +16,8 @@ body::before {
     background-image: url('assets/backgroung.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     filter:  brightness(45%);
     z-index: -1;
 }

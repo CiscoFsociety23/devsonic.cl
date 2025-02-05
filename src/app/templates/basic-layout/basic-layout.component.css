@@ -1,8 +1,14 @@
 .navigation-bar {
+    position: fixed; /* Fija la barra en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
 }
 
 .navigation-title {
@@ -32,11 +38,11 @@
     padding: 0.25rem 0.5rem;
     text-decoration: none;
     border-radius: 0.5rem;
+    transition: ease-in-out 0.175s;
 }
 
 .navigation-items li a:hover {
     background-color: #213555c3;
-    transition: ease-in-out 0.175s;
     filter: drop-shadow(0px 0px 5px #ffffff);
 }
 
@@ -49,9 +55,10 @@
 /* NAVIGATION DROPDOWN */
 .navigation-dropdown {
     display: none;
-    position: absolute;
+    position: fixed;
+    background-attachment: fixed;
     right: 2rem;
-    top: 5rem;
+    top: 5.5rem;
     height: 0;
     width: 300px;
     background: rgba(255, 255, 255, 0.1);
@@ -117,6 +124,7 @@
         display: block;
     }
     .navigation-dropdown {
+        z-index: 1;
         display: block;
     }
 }
