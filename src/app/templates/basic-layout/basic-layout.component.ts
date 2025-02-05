@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import * as Scrollreveal from 'scrollreveal';
 
 @Component({
   selector: 'app-basic-layout',
@@ -8,7 +9,33 @@ import { RouterLink } from '@angular/router';
   templateUrl: './basic-layout.component.html',
   styleUrl: './basic-layout.component.css'
 })
-export class BasicLayoutComponent {
+export class BasicLayoutComponent implements AfterViewInit {
+
+  ngAfterViewInit(): void {
+    ScrollReveal().reveal('.navigation-title', {
+      duration: 500,
+      origin: 'top',
+      distance: '200px',
+      easing: 'ease-in-out',
+      delay: 1500
+    });
+
+    ScrollReveal().reveal('.navigation-items', {
+      duration: 500,
+      origin: 'top',
+      distance: '200px',
+      easing: 'ease-in-out',
+      delay: 1750
+    });
+
+    ScrollReveal().reveal('.navigation-btn', {
+      duration: 500,
+      origin: 'top',
+      distance: '200px',
+      easing: 'ease-in-out',
+      delay: 1750
+    });
+  }
 
   public toggleNavigationDropdown = (): void => {
     document.querySelector('.navigation-dropdown')?.classList.toggle('open');
