@@ -1,6 +1,6 @@
 .home-content {
     cursor: default;
-    height: 85vh; 
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,4 +49,25 @@
     border: 1px solid #ffffff;
     filter: drop-shadow(0px 0px 5px #ffffff);
     transition: ease-in-out 0.175s;
+}
+
+/* RESPONSIVE DESIGN */
+@media(max-width: 870px){
+    .home-content h1 {
+        font-size: 4rem;
+    }
+    .home-content h2,
+    .home-content h3 {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 375px){
+    .home-content h1 {
+        font-size: 3rem;
+    }
+    .home-content h2,
+    .home-content h3 {
+        font-size: 1.5rem;
+    }
 }
