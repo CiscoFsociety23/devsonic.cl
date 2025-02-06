@@ -1,0 +1,167 @@
+.portfolio-content {
+    margin-top: 80px;
+    padding: 20px;
+    overflow: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.portfolio-content article img {
+    width: 12rem;
+    border-radius: 1rem;
+    margin: 1rem 0rem;
+    filter: drop-shadow(0px 0px 15px #ffffffa9);
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30rem;
+    height: 50rem;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+
+.cloud-data li,
+.cloud-data li a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.cloud-data li {
+    margin: 2rem 0rem;
+}
+
+.cloud-data li a {
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid #ffffff;
+    transition: ease-in-out 0.175s;
+}
+
+.cloud-data li a:hover {
+    background-color: #213555c3;
+    filter: drop-shadow(0px 0px 5px #ffffff);
+}
+
+.resume {
+    width: 45rem;
+}
+
+.content {
+    margin: 2rem 0rem;
+    padding: .5rem 1rem;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 1rem;
+}
+
+.content h1 {
+    margin: .5rem 0rem;
+    font-family: "Nova Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+}
+
+.content hr {
+    margin: .5rem 4rem;
+}
+
+.content ul li,
+.content p,
+.content ul li a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.resume-title {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.15rem;
+}
+
+.contact-zone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-zone li {
+    margin: 1rem 0;
+}
+
+.contact-zone li a {
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid #ffffff;
+    transition: ease-in-out 0.175s;
+}
+
+.contact-zone li a:hover {
+    background-color: #213555c3;
+    filter: drop-shadow(0px 0px 5px #ffffff);
+}
+
+/* RESPONSIVE DESIGN */
+@media(max-width: 965px){
+    .portfolio-content {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .portfolio-content article img {
+        width: 6rem;
+    }
+    .presentation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: .9rem;
+        width: 100%;
+        height: 35rem;
+    }
+    .resume {
+        width: 100%;
+    }
+    .portfolio-content article img {
+        width: 10rem;
+    }
+    .contact-zone {
+        flex-direction: column;
+    }
+}
+@media(max-width: 375px){
+    .portfolio-content {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .portfolio-content article img {
+        width: 6rem;
+    }
+    .presentation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: .9rem;
+        width: 19.5rem;
+    }
+    .resume {
+        width: 19.5rem;
+    }
+    .portfolio-content article img {
+        width: 10rem;
+    }
+    .contact-zone {
+        flex-direction: column;
+    }
+}
