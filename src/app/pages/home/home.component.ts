@@ -15,17 +15,25 @@ export class HomeComponent implements AfterViewInit {
     ScrollReveal().reveal('.home-showcase h1', {
       duration: 1000,
       origin: 'top',
-      distance: '100px',
+      distance: '150px',
       easing: 'ease-in-out',
       delay: 250
     });
 
     ScrollReveal().reveal('.home-showcase h4', {
+      duration: 500,
+      origin: 'top',
+      distance: '125px',
+      easing: 'ease-in-out',
+      delay: 500
+    });
+
+    ScrollReveal().reveal('.name', {
       duration: 1000,
       origin: 'top',
-      distance: '100px',
+      distance: '105px',
       easing: 'ease-in-out',
-      delay: 250
+      delay: 500
     });
 
     ScrollReveal().reveal('.home-showcase hr', {

@@ -17,7 +17,7 @@ export class BasicLayoutComponent implements AfterViewInit {
       origin: 'top',
       distance: '200px',
       easing: 'ease-in-out',
-      delay: 1500
+      delay: 1750
     });
 
     ScrollReveal().reveal('.navigation-items', {
@@ -25,7 +25,7 @@ export class BasicLayoutComponent implements AfterViewInit {
       origin: 'top',
       distance: '200px',
       easing: 'ease-in-out',
-      delay: 1750
+      delay: 2000
     });
 
     ScrollReveal().reveal('.navigation-btn', {
@@ -33,7 +33,7 @@ export class BasicLayoutComponent implements AfterViewInit {
       origin: 'top',
       distance: '200px',
       easing: 'ease-in-out',
-      delay: 1750
+      delay: 2000
     });
   }
 
