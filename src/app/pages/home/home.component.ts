@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import ScrollReveal from 'scrollreveal';
 
@@ -9,9 +9,9 @@ import ScrollReveal from 'scrollreveal';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent implements OnInit {
 
-  ngAfterViewInit(): void {
+  ngOnInit(): void {
     ScrollReveal().reveal('.home-showcase h1', {
       duration: 1000,
       origin: 'top',

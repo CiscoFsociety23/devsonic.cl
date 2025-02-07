@@ -74,6 +74,7 @@
 .special-content li a {
     padding: .5rem 1rem;
     border-radius: 1rem;
+    font-family: "Satisfy", serif;
     background-color: #213555c3;
     border: 0.25px dotted #ffffff90;
     transition: ease-in-out 0.175s;

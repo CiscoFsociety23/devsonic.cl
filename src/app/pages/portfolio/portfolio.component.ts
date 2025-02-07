@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import ScrollReveal from 'scrollreveal';
 
@@ -9,9 +9,9 @@ import ScrollReveal from 'scrollreveal';
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css'
 })
-export class PortfolioComponent implements AfterViewInit {
+export class PortfolioComponent implements OnInit {
 
-  ngAfterViewInit(): void {
+  ngOnInit(): void {
     
     ScrollReveal().reveal('.data-img img', {
       duration: 1000,
