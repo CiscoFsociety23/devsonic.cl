@@ -50,7 +50,7 @@
 .cloud-data li a {
     padding: .5rem 1rem;
     border-radius: 1rem;
-    border: 1px solid #ffffff;
+    border: 0.25px solid #ffffff;
     transition: ease-in-out 0.175s;
     font-size: 1rem;
 }
@@ -75,13 +75,13 @@
     padding: .5rem 1rem;
     border-radius: 1rem;
     background-color: #213555c3;
-    border: 1px dotted #ffffff90;
+    border: 0.25px dotted #ffffff90;
     transition: ease-in-out 0.175s;
 }
 
 .special-content li a:hover {
     background-color: #213555c3;
-    border: 1px solid #ffffff90;
+    border: 0.25px solid #ffffff90;
     filter: drop-shadow(0px 0px 5px #ffffff90);
 }
 
@@ -140,7 +140,7 @@
 .contact-zone li a {
     padding: .5rem 1rem;
     border-radius: 1rem;
-    border: 1px solid #ffffff;
+    border: 0.25px solid #ffffff;
     transition: ease-in-out 0.175s;
     font-size: 1rem;
 }

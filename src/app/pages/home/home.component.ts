@@ -25,37 +25,32 @@ export class HomeComponent implements AfterViewInit {
       origin: 'top',
       distance: '125px',
       easing: 'ease-in-out',
-      delay: 500
-    });
-
-    ScrollReveal().reveal('.name', {
-      duration: 1000,
-      origin: 'top',
-      distance: '105px',
-      easing: 'ease-in-out',
-      delay: 500
+      delay: 1250
     });
 
     ScrollReveal().reveal('.home-showcase hr', {
       duration: 750,
       origin: 'left',
-      distance: '1000px',
-      delay: 500
+      distance: '500px',
+      delay: 2000
     });
 
     ScrollReveal().reveal('.home-showcase h2', {
       duration: 750,
       origin: 'bottom',
       distance: '50px',
-      delay: 500
+      delay: 3000
     });
 
     ScrollReveal().reveal('.home-showcase h3', {
       duration: 1000,
       origin: 'bottom',
       distance: '100px',
-      delay: 250
+      delay: 2750
     });
+
+    setTimeout(() => { document.querySelector(".name")?.classList.add("name-active") }, 2000);
+
   }
 
 }

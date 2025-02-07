@@ -16,7 +16,7 @@ export class PortfolioComponent implements AfterViewInit {
     ScrollReveal().reveal('.data-img img', {
       duration: 1000,
       origin: 'top',
-      distance: '100px',
+      distance: '150px',
       easing: 'ease-in-out',
       delay: 250
     });
@@ -24,7 +24,7 @@ export class PortfolioComponent implements AfterViewInit {
     ScrollReveal().reveal('.data-img h1, .data-img h2', {
       duration: 750,
       origin: 'top',
-      distance: '25px',
+      distance: '50px',
       easing: 'ease-in-out',
       delay: 500
     });
@@ -32,23 +32,23 @@ export class PortfolioComponent implements AfterViewInit {
     ScrollReveal().reveal('.special-content', {
       duration: 500,
       origin: 'rigth',
-      distance: '100px',
+      distance: '150px',
       easing: 'ease-in-out',
       delay: 500
     });
 
     ScrollReveal().reveal('.cloud-data', {
-      duration: 500,
+      duration: 750,
       origin: 'left',
-      distance: '100px',
+      distance: '150px',
       easing: 'ease-in-out',
       delay: 500
     });
 
     ScrollReveal().reveal('.content', {
-      duration: 1000,
+      duration: 750,
       origin: 'bottom',
-      distance: '100px',
+      distance: '150px',
       easing: 'ease-in-out',
       delay: 250
     });
