@@ -2,6 +2,11 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@assets/*": ["./src/assets/*"],
+      "@templates/*": ["./src/app/templates/*"],
+      "@pages/*": ["./src/app/pages/*"]
+    },
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,

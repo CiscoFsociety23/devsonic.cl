@@ -1,0 +1,24 @@
+<header>
+    <nav class="navigation-bar">
+        <h1 class="navigation-title">🎛️ DevSonic</h1>
+        <ul class="navigation-items">
+            <li><a routerLink="/"><i class="fa-solid fa-house"></i> Central</a></li>
+            <li><a routerLink="/portfolio"><i class="fa-solid fa-user"></i> Sobre Mi</a></li>
+            <li><a routerLink="/music"><i class="fa-solid fa-headphones"></i> Música</a></li>
+            <li><a routerLink="/photography"><i class="fa-solid fa-camera"></i> Fotografías</a></li>
+            <li><a routerLink="/more-proyects"><i class="fa-solid fa-folder-open"></i> Proyectos</a></li>
+        </ul>
+        <div class="navigation-btn" (click)="toggleNavigationDropdown()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div class="navigation-dropdown">
+        <ul>
+            <li><a (click)="toggleNavigationDropdown()" routerLink="/"><i class="fa-solid fa-house"></i> Central</a></li>
+            <li><a (click)="toggleNavigationDropdown()" routerLink="/portfolio"><i class="fa-solid fa-user"></i> Portafolio</a></li>
+            <li><a (click)="toggleNavigationDropdown()" routerLink="/music"><i class="fa-solid fa-headphones"></i> Música</a></li>
+            <li><a (click)="toggleNavigationDropdown()" routerLink="/photography"><i class="fa-solid fa-camera"></i> Fotografías</a></li>
+            <li><a (click)="toggleNavigationDropdown()" routerLink="/more-proyects"><i class="fa-solid fa-folder-open"></i> Proyectos</a></li>
+        </ul>
+    </div>
+</header>
