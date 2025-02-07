@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import ScrollReveal from 'scrollreveal';
 
 @Component({
@@ -8,9 +8,9 @@ import ScrollReveal from 'scrollreveal';
   templateUrl: './not-found.component.html',
   styleUrl: './not-found.component.css'
 })
-export class NotFoundComponent implements AfterViewInit {
+export class NotFoundComponent implements OnInit {
 
-  ngAfterViewInit(): void {
+  ngOnInit(): void {
     ScrollReveal().reveal('.not-found-content img', {
       duration: 1000,
       origin: 'top',

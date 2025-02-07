@@ -34,7 +34,7 @@
 }
 
 .navigation-items li a {
-    border: 1px solid #ffffff;
+    border: 0.25px solid #ffffff;
     padding: 0.25rem 0.5rem;
     text-decoration: none;
     border-radius: 0.5rem;

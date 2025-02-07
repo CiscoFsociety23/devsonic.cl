@@ -20,6 +20,7 @@
     text-shadow: 0px 0px 100px rgba(0, 0, 0, 1);
     font-size: 5rem;
     padding: 0rem 5rem;
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 1));
     font-family: "Nova Mono", serif;
     font-weight: 400;
     font-style: normal;
@@ -33,6 +34,7 @@
     padding: 0rem 2rem;
     border-radius: 1rem;
     font-family: "Nova Mono", serif;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 1));
     font-weight: 400;
     font-style: normal;
 }
@@ -44,22 +46,54 @@
     font-style: normal;
     padding: .25rem .5rem;
     border-radius: 1rem;
-    border: 1px solid rgba(0, 0, 0, .5);
+    border: 0.25px solid rgba(0, 0, 0, .5);
     background-color: rgba(0, 0, 0, .5);
     transition: ease-in-out 0.175s;
 }
 
 .home-showcase h2 a:hover {
-    border: 1px solid #ffffff;
+    border: 0.25px solid #ffffff;
     filter: drop-shadow(0px 0px 5px #ffffff);
 }
 
 .home-showcase h4 {
     font-size: 5rem;
     text-align: center;
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 1));
     font-family: "Nova Mono", serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.name {
+    position: relative;
+    display: inline-block;
+    color: #ffffff00;
+    text-shadow: none;
+    transition: all 1s ease-in-out;
+}
+
+.name::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -5%;
+    width: 109%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 1rem;
+    z-index: -1;
+    clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
+    transition: clip-path .75s ease-in-out;
+}
+
+.name-active {
+    color: #ffffff;
+    text-shadow: 0px 0px 50px #ffffff;
+}
+
+.name-active::after {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
 }
 
 /* RESPONSIVE DESIGN */
@@ -92,6 +126,9 @@
     .home-content h2,
     .home-content h3 {
         font-size: 1rem;
+    }
+    .home-showcase h2 {
+        padding: .5rem 0;
     }
     .home-showcase h4 {
         font-size: 1.5rem;

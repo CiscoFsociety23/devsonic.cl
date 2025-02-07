@@ -1,0 +1,89 @@
+.music-content {
+    cursor: default;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    margin: 2rem;
+    border-radius: 0;
+    position: relative;
+}
+
+.intro-content {
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.intro-content h1 {
+    font-size: 3rem;
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 1));
+    font-family: "Nova Mono", serif;
+    font-weight: 400;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.intro-content span {
+    font-size: 1.5rem;
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 1));
+    font-family: "Nova Mono", serif;
+    font-weight: 400;
+}
+
+.intro-content span a {
+    border-radius: 2rem;
+    padding: 0.25rem 1.5rem;
+    transition: ease-in-out 0.175s;
+    background-color: #ff550077;
+    border: 0.25px solid #ff550077;
+    text-decoration: none;
+}
+
+.intro-content span a:hover {
+    background-color: #ff5500d3;
+    border: 0.25px solid #ffffff;
+    filter: drop-shadow(0px 0px 25px #ffffff6a);
+}
+
+.music-soundcloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.music-soundcloud section h2 {
+    padding: 0.5rem 1.5rem;
+    background-color: #00000060;
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 1));
+    font-family: "Satisfy", serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 2rem;
+    list-style: none;
+    border: 0.25px solid #ffffff;
+    margin: 2rem 1rem;
+}
+
+@media (max-width: 1140px) {
+    .intro-content {
+        margin: .5rem 0;
+    }
+    .intro-content h1 {
+        font-size: 2rem;
+    }
+    .intro-content span,
+    .music-soundcloud section h2 {
+        font-size: 1rem;
+    }
+    .music-soundcloud {
+        flex-direction: column;
+    }
+}

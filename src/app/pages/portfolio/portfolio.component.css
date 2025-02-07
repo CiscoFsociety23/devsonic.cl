@@ -1,18 +1,18 @@
 .portfolio-content {
-    margin-top: 80px;
-    padding: 20px;
+    margin-top: 4rem;
     overflow: auto;
     justify-content: center;
     display: flex;
     flex-direction: row;
+    margin-top: 1rem 2rem;
+    padding: 0 2rem;
 }
 
-
 .portfolio-content article img {
-    width: 12rem;
-    border-radius: 1rem;
+    width: 7rem;
+    border-radius: 2rem;
     margin: 1rem 0rem;
-    filter: drop-shadow(0px 0px 15px #ffffffa9);
+    filter: drop-shadow(0px 0px 5px #ffffff);
 }
 
 .presentation {
@@ -24,6 +24,17 @@
     align-items: center;
     justify-content: space-around;
     font-size: 1rem;
+}
+
+.presentation .data-img h1,
+.presentation .data-img h2 {
+    cursor: default;
+    text-shadow: 0px 0px 100px rgba(0, 0, 0, 1);
+    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 1));
+    font-size: 1.25rem;
+    font-family: "Nova Mono", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .cloud-data li,
@@ -39,14 +50,42 @@
 .cloud-data li a {
     padding: .5rem 1rem;
     border-radius: 1rem;
-    border: 1px solid #ffffff;
+    border: 0.25px solid #ffffff;
     transition: ease-in-out 0.175s;
+    font-size: 1rem;
 }
 
 .cloud-data li a:hover {
     background-color: #213555c3;
     filter: drop-shadow(0px 0px 5px #ffffff);
 }
+
+.special-content li,
+.special-content li a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.special-content li {
+    margin: 2rem 0rem;
+    font-size: 1.25rem;
+}
+
+.special-content li a {
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    font-family: "Satisfy", serif;
+    background-color: #213555c3;
+    border: 0.25px dotted #ffffff90;
+    transition: ease-in-out 0.175s;
+}
+
+.special-content li a:hover {
+    background-color: #213555c3;
+    border: 0.25px solid #ffffff90;
+    filter: drop-shadow(0px 0px 5px #ffffff90);
+}
+
 
 .resume {
     width: 45rem;
@@ -102,8 +141,9 @@
 .contact-zone li a {
     padding: .5rem 1rem;
     border-radius: 1rem;
-    border: 1px solid #ffffff;
+    border: 0.25px solid #ffffff;
     transition: ease-in-out 0.175s;
+    font-size: 1rem;
 }
 
 .contact-zone li a:hover {
@@ -114,11 +154,14 @@
 /* RESPONSIVE DESIGN */
 @media(max-width: 965px){
     .portfolio-content {
+        margin-top: 5rem;
         justify-content: center;
         flex-direction: column;
+        padding: 0 1rem;
     }
     .portfolio-content article img {
-        width: 6rem;
+        margin-top: 8rem;
+        width: 8rem;
     }
     .presentation {
         display: flex;
@@ -130,10 +173,8 @@
         height: 35rem;
     }
     .resume {
+        margin-top: 6rem;
         width: 100%;
-    }
-    .portfolio-content article img {
-        width: 10rem;
     }
     .contact-zone {
         flex-direction: column;
@@ -152,14 +193,19 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        font-size: .9rem;
         width: 19.5rem;
+    }
+    .data-img h1,
+    .data-img h2 {
+        font-size: .3rem;
+    }
+    .special-content li a,
+    .cloud-data li a {
+        font-size: .9rem;
     }
     .resume {
+        margin-top: 4rem;
         width: 19.5rem;
-    }
-    .portfolio-content article img {
-        width: 10rem;
     }
     .contact-zone {
         flex-direction: column;
