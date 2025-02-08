@@ -9,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class PhotographyComponent {
 
+  public SantaLucia01: string = '@assets/santa-lucia/SantaLucia-01.jpg';
+
 }
