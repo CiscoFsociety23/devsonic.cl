@@ -1,1 +1,10 @@
-<img [src]="SantaLucia01" alt="SantaLucia01">
+<section class="photography-content">
+    <article>
+        <h1><a href="https://maps.app.goo.gl/gTgtzZsS4Rxp32UG6" target="_blank"><i class="fa-solid fa-map-pin"></i>Cerro Santa Lucia</a> - Santiago; Chile</h1>
+    </article>
+    <article class="photographys">
+        @for (santaLuciaPhoto of SantaLuciaPhotos; track $index) {
+            <img [src]="santaLuciaPhoto" alt="Santa Lucia">
+        }
+    </article>
+</section>
