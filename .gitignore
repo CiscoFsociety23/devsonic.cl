@@ -38,6 +38,7 @@ package-lock.json
 testem.log
 /typings
 *.spec.ts
+src/environments/
 
 # System files
 .DS_Store
